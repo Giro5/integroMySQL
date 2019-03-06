@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cosmeticDataSet" targetNamespace="http://tempuri.org/cosmeticDataSet.xsd" xmlns:mstns="http://tempuri.org/cosmeticDataSet.xsd" xmlns="http://tempuri.org/cosmeticDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="cosmeticConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="cosmeticConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.integroMySQL.Properties.Settings.GlobalReference.Default.cosmeticConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="agentsTableAdapter" GeneratorDataComponentClassName="agentsTableAdapter" Name="agents" UserDataComponentName="agentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cosmeticConnectionString (Settings)" DbObjectName="cosmetic.agents" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Code_agent`, `Code_manager`, `Name_agent`, `Pass` FROM `agents`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="categoriesTableAdapter" GeneratorDataComponentClassName="categoriesTableAdapter" Name="categories" UserDataComponentName="categoriesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cosmeticConnectionString (Settings)" DbObjectName="cosmetic.categories" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Code_category`, `Name_category` FROM `categories`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="content_reportsTableAdapter" GeneratorDataComponentClassName="content_reportsTableAdapter" Name="content_reports" UserDataComponentName="content_reportsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cosmeticConnectionString (Settings)" DbObjectName="cosmetic.content_reports" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Code_content`, `Code_report`, `Article`, `Amount` FROM `content_reports`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="itemsTableAdapter" GeneratorDataComponentClassName="itemsTableAdapter" Name="items" UserDataComponentName="itemsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cosmeticConnectionString (Settings)" DbObjectName="cosmetic.items" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Code_category`, `Article`, `Name_item`, `bb`, `Cost` FROM `items`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="items_monthTableAdapter" GeneratorDataComponentClassName="items_monthTableAdapter" Name="items_month" UserDataComponentName="items_monthTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cosmeticConnectionString (Settings)" DbObjectName="cosmetic.items_month" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Id`, `Article`, `N_month`, `Markup`, `Discount` FROM `items_month`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="managersTableAdapter" GeneratorDataComponentClassName="managersTableAdapter" Name="managers" UserDataComponentName="managersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cosmeticConnectionString (Settings)" DbObjectName="cosmetic.managers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Code_manager`, `Name_manager`, `Pass` FROM `managers`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="reportsTableAdapter" GeneratorDataComponentClassName="reportsTableAdapter" Name="reports" UserDataComponentName="reportsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cosmeticConnectionString (Settings)" DbObjectName="cosmetic.reports" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Code_report`, `N_report`, `Code_agent`, `Date_report` FROM `reports`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cosmeticDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="cosmeticDataSet" msprop:Generator_UserDSName="cosmeticDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="agents" msprop:Generator_TableClassName="agentsDataTable" msprop:Generator_TableVarName="tableagents" msprop:Generator_TablePropName="agents" msprop:Generator_RowDeletingName="agentsRowDeleting" msprop:Generator_RowChangingName="agentsRowChanging" msprop:Generator_RowEvHandlerName="agentsRowChangeEventHandler" msprop:Generator_RowDeletedName="agentsRowDeleted" msprop:Generator_UserTableName="agents" msprop:Generator_RowChangedName="agentsRowChanged" msprop:Generator_RowEvArgName="agentsRowChangeEvent" msprop:Generator_RowClassName="agentsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="categories" msprop:Generator_TableClassName="categoriesDataTable" msprop:Generator_TableVarName="tablecategories" msprop:Generator_TablePropName="categories" msprop:Generator_RowDeletingName="categoriesRowDeleting" msprop:Generator_RowChangingName="categoriesRowChanging" msprop:Generator_RowEvHandlerName="categoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="categoriesRowDeleted" msprop:Generator_UserTableName="categories" msprop:Generator_RowChangedName="categoriesRowChanged" msprop:Generator_RowEvArgName="categoriesRowChangeEvent" msprop:Generator_RowClassName="categoriesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="content_reports" msprop:Generator_TableClassName="content_reportsDataTable" msprop:Generator_TableVarName="tablecontent_reports" msprop:Generator_TablePropName="content_reports" msprop:Generator_RowDeletingName="content_reportsRowDeleting" msprop:Generator_RowChangingName="content_reportsRowChanging" msprop:Generator_RowEvHandlerName="content_reportsRowChangeEventHandler" msprop:Generator_RowDeletedName="content_reportsRowDeleted" msprop:Generator_UserTableName="content_reports" msprop:Generator_RowChangedName="content_reportsRowChanged" msprop:Generator_RowEvArgName="content_reportsRowChangeEvent" msprop:Generator_RowClassName="content_reportsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="items" msprop:Generator_TableClassName="itemsDataTable" msprop:Generator_TableVarName="tableitems" msprop:Generator_TablePropName="items" msprop:Generator_RowDeletingName="itemsRowDeleting" msprop:Generator_RowChangingName="itemsRowChanging" msprop:Generator_RowEvHandlerName="itemsRowChangeEventHandler" msprop:Generator_RowDeletedName="itemsRowDeleted" msprop:Generator_UserTableName="items" msprop:Generator_RowChangedName="itemsRowChanged" msprop:Generator_RowEvArgName="itemsRowChangeEvent" msprop:Generator_RowClassName="itemsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="items_month" msprop:Generator_TableClassName="items_monthDataTable" msprop:Generator_TableVarName="tableitems_month" msprop:Generator_TablePropName="items_month" msprop:Generator_RowDeletingName="items_monthRowDeleting" msprop:Generator_RowChangingName="items_monthRowChanging" msprop:Generator_RowEvHandlerName="items_monthRowChangeEventHandler" msprop:Generator_RowDeletedName="items_monthRowDeleted" msprop:Generator_UserTableName="items_month" msprop:Generator_RowChangedName="items_monthRowChanged" msprop:Generator_RowEvArgName="items_monthRowChangeEvent" msprop:Generator_RowClassName="items_monthRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="managers" msprop:Generator_TableClassName="managersDataTable" msprop:Generator_TableVarName="tablemanagers" msprop:Generator_TablePropName="managers" msprop:Generator_RowDeletingName="managersRowDeleting" msprop:Generator_RowChangingName="managersRowChanging" msprop:Generator_RowEvHandlerName="managersRowChangeEventHandler" msprop:Generator_RowDeletedName="managersRowDeleted" msprop:Generator_UserTableName="managers" msprop:Generator_RowChangedName="managersRowChanged" msprop:Generator_RowEvArgName="managersRowChangeEvent" msprop:Generator_RowClassName="managersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="reports" msprop:Generator_TableClassName="reportsDataTable" msprop:Generator_TableVarName="tablereports" msprop:Generator_TablePropName="reports" msprop:Generator_RowDeletingName="reportsRowDeleting" msprop:Generator_RowChangingName="reportsRowChanging" msprop:Generator_RowEvHandlerName="reportsRowChangeEventHandler" msprop:Generator_RowDeletedName="reportsRowDeleted" msprop:Generator_UserTableName="reports" msprop:Generator_RowChangedName="reportsRowChanged" msprop:Generator_RowEvArgName="reportsRowChangeEvent" msprop:Generator_RowClassName="reportsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\bin\Debug\integroMySQL.exe.config
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\bin\Debug\integroMySQL.exe
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\bin\Debug\integroMySQL.pdb
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\bin\Debug\MySql.Data.dll
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\bin\Debug\Google.Protobuf.dll
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\bin\Debug\MySql.Data.xml
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.csprojAssemblyReference.cache
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.Form1.resources
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.Properties.Resources.resources
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.csproj.GenerateResource.cache
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.csproj.CoreCompileInputs.cache
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.csproj.CopyComplete
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.exe
+C:\Users\nikit\source\repos\integroMySQL\integroMySQL\obj\Debug\integroMySQL.pdb
